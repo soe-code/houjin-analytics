@@ -1,0 +1,39 @@
+# 生成済みの分析サンプルParquetと検証用マニフェストをコミットする。
+# 生データ・作業用DBなどは引き続き除外する。
+data/*
+!data/processed/
+data/processed/*
+!data/processed/houjin_enriched_part*.parquet
+!data/processed/invoice_enriched_part*.parquet
+!data/processed/manifest.json
+*.duckdb
+*.duckdb.wal
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+
+# uv
+uv.lock.bak
+
+# テスト・型チェック・カバレッジ
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ノートブック実行時生成物
+.ipynb_checkpoints/
+
+# エディタ・OS
+.vscode/
+.idea/
+.DS_Store
+
+# ローカル環境変数
+.env

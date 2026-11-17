@@ -1,0 +1,81 @@
+{
+  "prepared_date_jst": "2026-11-18",
+  "datasets": {
+    "houjin_enriched": {
+      "total_rows": 1362626,
+      "key_column": "corporate_number",
+      "dummy_column": "revenue_dummy_jpy",
+      "unit": "JPY",
+      "files": [
+        {
+          "path": "data/processed/houjin_enriched_part01.parquet",
+          "rows": 272526,
+          "bytes": 10093312,
+          "sha256": "f90f768dcf55d5d1a9e17c81d1b76a665c8bc54f760f6870a78cd38d976ff9f2"
+        },
+        {
+          "path": "data/processed/houjin_enriched_part02.parquet",
+          "rows": 272525,
+          "bytes": 10190696,
+          "sha256": "874edcf8f70dc6229a193675fce0600267226f1c521b26dd49fd3628c27c3fa3"
+        },
+        {
+          "path": "data/processed/houjin_enriched_part03.parquet",
+          "rows": 272525,
+          "bytes": 10103705,
+          "sha256": "f86799aa49f191ed9627064b3443d362ca5ff959b9a3a84c0d643ad5aeb75bc1"
+        },
+        {
+          "path": "data/processed/houjin_enriched_part04.parquet",
+          "rows": 272525,
+          "bytes": 10066400,
+          "sha256": "a75f80e7c667e0958aae694a5c32e331a585d85c36dfc297d94481fc387e09b0"
+        },
+        {
+          "path": "data/processed/houjin_enriched_part05.parquet",
+          "rows": 272525,
+          "bytes": 10056037,
+          "sha256": "06b4a8621b9cbdfcc4a016ebce0b891c74ac0e3d30fbd9e4933101b9a7ce7fd9"
+        }
+      ]
+    },
+    "invoice_enriched": {
+      "total_rows": 565153,
+      "key_column": "invoice_registration_number",
+      "dummy_column": "cost_jpy",
+      "unit": "JPY",
+      "files": [
+        {
+          "path": "data/processed/invoice_enriched_part01.parquet",
+          "rows": 113031,
+          "bytes": 4075810,
+          "sha256": "7c39533c21685d4ec50d0c31d69a0e3d2401237e0b1996ef3cb8640018a74f10"
+        },
+        {
+          "path": "data/processed/invoice_enriched_part02.parquet",
+          "rows": 113031,
+          "bytes": 4096290,
+          "sha256": "9da75a12f3bc86d1e109e930696421e80066b299effe0cb0c766a27e8f022de8"
+        },
+        {
+          "path": "data/processed/invoice_enriched_part03.parquet",
+          "rows": 113031,
+          "bytes": 4078385,
+          "sha256": "96648bd55dcc13dce262dbe55b702ac2dbb353e719b0e41887208b89d0914d4c"
+        },
+        {
+          "path": "data/processed/invoice_enriched_part04.parquet",
+          "rows": 113030,
+          "bytes": 4056713,
+          "sha256": "9e7fbc7903f2efd3d0a158f46f1506fb5a69373b0b63b7ee81106dfe003ca2b8"
+        },
+        {
+          "path": "data/processed/invoice_enriched_part05.parquet",
+          "rows": 113030,
+          "bytes": 4057178,
+          "sha256": "f734e75e16515b33045feac33be1646505efc9d4cbd7f8ba944b371caa138fe7"
+        }
+      ]
+    }
+  }
+}

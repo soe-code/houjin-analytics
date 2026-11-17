@@ -1,0 +1,17 @@
+# 入力データの所在。いずれも他プロジェクトの成果物を読み取り専用で参照する（コピーしない）。
+# 相対パスはこのリポジトリのルート基準。
+
+[houjin_bangou]
+# 法人番号公表サイト 全件データ（CSV・Unicode、ヘッダなし30列）
+csv_glob = "../jp-invoice-entity-resolution/data/raw/houjin_bangou/2026-07-31/*.csv"
+
+[edinet]
+# EDINET API v2 書類一覧（docID → JCN=法人番号 の対応に使う）
+lists_glob = "../edinet-accruals/data/raw/edinet/lists/*/*.json"
+# edinet-accruals の統一マッピング適用済み財務値（1書類1行）
+financials_csv = "../edinet-accruals/data/interim/concept_values_v1/values_wide.csv"
+
+[output]
+duckdb = "data/work/houjin.duckdb"
+# ファイル名の基準。実際には _part01 〜 _part05 を付けて5分割出力する。
+parquet = "data/processed/houjin_enriched.parquet"

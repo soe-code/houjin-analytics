@@ -1,0 +1,12 @@
+[invoice]
+# 国税庁の法人用全件CSV。002は東京都。履歴を含むヘッダなし24列。
+csv_glob = "data/raw/invoice_registry/2026-10-30/h_all_20261030_002.csv"
+source_file_created_date = "2026-10-30"
+
+[houjin]
+parquet_glob = "data/processed/houjin_enriched_part*.parquet"
+
+[output]
+duckdb = "data/work/invoice.duckdb"
+# 実際には _part01 〜 _part05 を付けて5分割出力する。
+parquet = "data/processed/invoice_enriched.parquet"
